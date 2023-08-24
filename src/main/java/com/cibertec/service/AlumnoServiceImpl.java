@@ -9,14 +9,19 @@ import com.cibertec.entity.Alumno;
 import com.cibertec.repository.AlumnoRepository;
 
 @Service
-public class AlumnoServiceImpl implements AlumnoService{
+public class AlumnoServiceImpl implements AlumnoService {
 
 	@Autowired
 	private AlumnoRepository repository;
-	
+
 	@Override
 	public List<Alumno> listaAlumno() {
 		return repository.findAll();
+	}
+
+	@Override
+	public List<Alumno> listaAlumnoPorDni(String dni) {
+		return repository.findByDni(dni);
 	}
 
 }
