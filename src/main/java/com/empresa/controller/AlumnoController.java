@@ -1,4 +1,4 @@
-package com.cibertec.controller;
+package com.empresa.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cibertec.entity.Alumno;
-import com.cibertec.service.AlumnoService;
+import com.empresa.entity.Alumno;
+import com.empresa.service.AlumnoService;
 
 @RestController()
 @RequestMapping("/rest/alumno")

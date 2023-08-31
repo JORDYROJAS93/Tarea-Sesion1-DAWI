@@ -1,4 +1,4 @@
-package com.cibertec.entity;
+package com.empresa.entity;
 
 import java.util.Date;
 

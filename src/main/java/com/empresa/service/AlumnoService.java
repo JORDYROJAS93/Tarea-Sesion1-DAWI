@@ -1,8 +1,8 @@
-package com.cibertec.service;
+package com.empresa.service;
 
 import java.util.List;
 
-import com.cibertec.entity.Alumno;
+import com.empresa.entity.Alumno;
 
 public interface AlumnoService {
 
