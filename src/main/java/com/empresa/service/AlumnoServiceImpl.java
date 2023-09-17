@@ -9,11 +9,11 @@ import com.empresa.entity.Alumno;
 import com.empresa.repository.AlumnoRepository;
 
 @Service
-public class AlumnoServiceImpl implements AlumnoService {
+public class AlumnoServiceImpl implements AlumnoService{
 
 	@Autowired
 	private AlumnoRepository repository;
-
+	
 	@Override
 	public List<Alumno> listaAlumno() {
 		return repository.findAll();
@@ -23,5 +23,11 @@ public class AlumnoServiceImpl implements AlumnoService {
 	public List<Alumno> listaAlumnoPorDni(String dni) {
 		return repository.findByDni(dni);
 	}
+
+	@Override
+	public List<Alumno> listaAlumnoPorNombreLike(String nombre) {
+		return repository.findByNombreLike(nombre);
+	}
+	
 
 }

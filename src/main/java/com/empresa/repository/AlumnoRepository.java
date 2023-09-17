@@ -8,6 +8,8 @@ import com.empresa.entity.Alumno;
 
 public interface AlumnoRepository extends JpaRepository<Alumno, Integer>{
 	
-	public abstract List<Alumno> findByDni(String dni);
+
+	public List<Alumno> findByDni(String dni);
+	public List<Alumno> findByNombreLike(String nombre);
 
 }
